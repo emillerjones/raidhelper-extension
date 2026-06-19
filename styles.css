@@ -1,0 +1,70 @@
+#lootlink-sync-raids-button,
+#lootlink-scan-server-button,
+#lootlink-scan-all-servers-button {
+  position: fixed;
+  right: 18px;
+  z-index: 999999;
+  background: #5865f2;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0,0,0,.35);
+}
+#lootlink-sync-raids-button { bottom: 18px; }
+#lootlink-scan-server-button { bottom: 62px; background: #23a559; }
+#lootlink-scan-all-servers-button { bottom: 106px; background: #f59e0b; }
+#lootlink-sync-raids-button:hover,
+#lootlink-scan-server-button:hover,
+#lootlink-scan-all-servers-button:hover { filter: brightness(1.08); }
+#lootlink-sync-raids-button:disabled,
+#lootlink-scan-server-button:disabled,
+#lootlink-scan-all-servers-button:disabled { opacity: .65; cursor: wait; }
+#lootlink-sync-raids-panel {
+  position: fixed;
+  right: 18px;
+  bottom: 155px;
+  width: 360px;
+  max-height: 520px;
+  overflow: auto;
+  z-index: 999999;
+  background: #111827;
+  color: #f9fafb;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 8px;
+  box-shadow: 0 18px 50px rgba(0,0,0,.45);
+  font-family: system-ui, sans-serif;
+}
+.lootlink-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+.lootlink-panel-header button {
+  background: transparent;
+  color: white;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+.lootlink-panel-body { padding: 12px; }
+#lootlink-copy-json {
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.lootlink-raid-list { display: grid; gap: 8px; }
+.lootlink-raid-item {
+  display: grid;
+  gap: 3px;
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(255,255,255,.06);
+}
+.lootlink-raid-item span { opacity: .86; font-size: 12px; }
