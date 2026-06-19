@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "LootLink Discord Raid Sync",
+  "name": "RaidHelper Calendar Extension",
   "version": "3.1.0",
-  "description": "Scans visible/current Discord server raid channels for Raid-Helper events and imports them to LootLink.",
+  "description": "Scans Discord Raid-Helper events and syncs them to a searchable raid calendar.",
   "permissions": ["storage", "clipboardWrite"],
   "host_permissions": [
     "https://discord.com/*",
